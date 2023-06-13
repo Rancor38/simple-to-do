@@ -1,0 +1,89 @@
+:root {
+        --light-blue: #87CEEB;
+        --light-yellow: #ffda6c;
+        --light-green: #90EE90;
+        --danger: rgb(255, 45, 45);
+        --intense-orange: rgb(249, 172, 28);
+      }
+
+li {
+        font-size: 18px;
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        place-items: center;
+}
+
+
+li:hover {
+        cursor: pointer;
+}
+
+body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Playfair Display", serif;
+}
+
+button {
+        min-width: 250px;
+        background-color: green;
+        color: white;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        margin: 10px;
+}
+
+button:hover {
+        filter: saturate(30%);
+}
+
+.new-task {
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: normal;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 6px;
+        color: grey;
+        background-color: #f2f2f2;
+        margin: 10px;
+}
+
+.form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+}
+
+.form input, .form button{
+        width: 100%;
+}
+
+.dwnld-btn {
+background-color: var(--light-blue);
+}
+
+.upld-btn {
+background-color: var(--light-yellow);
+}
+
+.plain-txt {
+background-color: var(--light-blue);
+}
+
+.delbtn {
+        background-color: var(--danger);
+}
+
+.strikebtn {
+        background-color: var(--intense-orange);
+}
